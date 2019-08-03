@@ -1,0 +1,109 @@
+time,stream,message
+"2019-04-27 09:30:58.809000,status,""starting job on pouta-gpu11gpu-w4pxvx, Peon 0.24.0"""
+2019-04-27 09:30:59.241000,status,free scratch space: 350.3 GB (350325112832 B)
+2019-04-27 09:30:59.350000,status,downloading repository (code)
+"2019-04-27 09:30:59.364000,status,""/valohai/inputs/test/test-set-images.tar.gz: found in cache, 44.6 MB"""
+"2019-04-27 09:30:59.369000,status,""/valohai/inputs/validation/validation-set-images.tar.gz: found in cache, 22.7 MB"""
+"2019-04-27 09:30:59.370000,status,""/valohai/inputs/train/train-set-images.tar.gz: found in cache, 491.9 MB"""
+2019-04-27 09:30:59.578000,status,image valohai/keras:2.1.3-tensorflow1.4.0-python3.5-cuda8.0-cudnn6-devel-ubuntu14.04 was found in cache
+2019-04-27 09:30:59.601000,status,/valohai/inputs/test/test-set-images.tar.gz: md5 sum: a5375c8b87e90e7123c04f01e0ae49ab
+2019-04-27 09:30:59.622000,status,/valohai/inputs/train/train-set-images.tar.gz: md5 sum: 1c6b36448e941d4a749056ee7dadb2f1
+2019-04-27 09:30:59.622000,status,/valohai/inputs/validation/validation-set-images.tar.gz: md5 sum: 37fbd9030d2ef02e0e8b33dc9f6d1543
+2019-04-27 09:30:59.637000,status,/valohai/inputs/test/test-set-images.tar.gz: sha1 sum: 9b7851130049989d5638968ef0985fc03fb6de0a
+2019-04-27 09:30:59.659000,status,/valohai/inputs/train/train-set-images.tar.gz: sha1 sum: a3837e22164f4d57ee2350996013505a223a5a88
+2019-04-27 09:30:59.660000,status,/valohai/inputs/validation/validation-set-images.tar.gz: sha1 sum: 15d29d2a2f6b85a5606d62f3996b8b6aafccd2f9
+2019-04-27 09:30:59.672000,status,/valohai/inputs/test/test-set-images.tar.gz: sha256 sum: a844bbc7234708e7fb0f6fc53415f111eb0fca7b311150684902c8e412b75b94
+2019-04-27 09:30:59.695000,status,/valohai/inputs/train/train-set-images.tar.gz: sha256 sum: ca44fe363b2e1737bb4178d3a1a36f0ee1a7602702e07f985573aa26fc22ec7d
+2019-04-27 09:30:59.696000,status,/valohai/inputs/validation/validation-set-images.tar.gz: sha256 sum: 61159eb2ed5188696a98e99fcf7ed77509675f8b1acb99bf8a80733d6cb328eb
+2019-04-27 09:31:00.076000,status,starting container with image valohai/keras@sha256:fc7343b2742eb2b089b075db9804884b2c2452233f3ef5ed8aecb63f879fda75...
+2019-04-27 09:31:00.113000,status,allocating 123.5 GB system memory to container
+2019-04-27 09:31:01.059000,status,started container 91234f0aa6afbffffc10da71964fba5d88832b76a1f0ba40322702f5d09b7139 on pouta-gpu11gpu-w4pxvx
+"2019-04-27 09:31:07.870000,stderr,""/usr/local/lib/python3.5/dist-packages/h5py/__init__.py:36: FutureWarning: Conversion of the second argument of issubdtype from `float` to `np.floating` is deprecated. In future, it will be treated as `np.float64 == np.dtype(float).type`."""
+2019-04-27 09:31:07.906000,stderr,  from ._conv import register_converters as _register_converters
+2019-04-27 09:31:08.056000,stderr,Using TensorFlow backend.
+2019-04-27 09:31:09.302000,stdout,Using Keras version: 2.1.3 backend: tensorflow
+2019-04-27 09:31:09.338000,stdout,TensorBoard log directory: /valohai/repository/logs/dvc-simple-2019-04-27_09-31-09
+2019-04-27 09:31:09.913000,stdout,Found 22000 images belonging to 2 classes.
+2019-04-27 09:31:10.673000,stderr,2019-04-27 09:31:10.636603: I tensorflow/core/platform/cpu_feature_guard.cc:137] Your CPU supports instructions that this TensorFlow binary was not compiled to use: SSE4.1 SSE4.2 AVX AVX2 FMA
+"2019-04-27 09:31:10.936000,stderr,""2019-04-27 09:31:10.934285: I tensorflow/stream_executor/cuda/cuda_gpu_executor.cc:892] successful NUMA node read from SysFS had negative value (-1), but there must be at least one NUMA node, so returning NUMA node zero"""
+2019-04-27 09:31:11.082000,stderr,2019-04-27 09:31:10.935343: I tensorflow/core/common_runtime/gpu/gpu_device.cc:1030] Found device 0 with properties: 
+2019-04-27 09:31:11.118000,stderr,name: Tesla P100-PCIE-16GB major: 6 minor: 0 memoryClockRate(GHz): 1.3285
+2019-04-27 09:31:11.158000,stderr,pciBusID: 0000:00:05.0
+2019-04-27 09:31:11.195000,stderr,totalMemory: 15.90GiB freeMemory: 15.64GiB
+"2019-04-27 09:31:11.231000,stderr,""2019-04-27 09:31:10.935390: I tensorflow/core/common_runtime/gpu/gpu_device.cc:1120] Creating TensorFlow device (/device:GPU:0) -> (device: 0, name: Tesla P100-PCIE-16GB, pci bus id: 0000:00:05.0, compute capability: 6.0)"""
+2019-04-27 09:31:11.995000,stdout,Train: Found 22000 images belonging to 2 classes.
+2019-04-27 09:31:12.580000,stdout,Validation: Found 1000 images belonging to 2 classes.
+2019-04-27 09:31:12.724000,stdout,Test: Found 2000 images belonging to 2 classes.
+2019-04-27 09:31:12.929000,stdout,_________________________________________________________________
+2019-04-27 09:31:12.965000,stdout,Layer (type)                 Output Shape              Param #   
+2019-04-27 09:31:13.002000,stdout,=================================================================
+"2019-04-27 09:31:13.038000,stdout,""conv2d_1 (Conv2D)            (None, 148, 148, 32)      896       """
+2019-04-27 09:31:13.074000,stdout,_________________________________________________________________
+"2019-04-27 09:31:13.111000,stdout,""max_pooling2d_1 (MaxPooling2 (None, 74, 74, 32)        0         """
+2019-04-27 09:31:13.147000,stdout,_________________________________________________________________
+"2019-04-27 09:31:13.183000,stdout,""conv2d_2 (Conv2D)            (None, 72, 72, 32)        9248      """
+2019-04-27 09:31:13.219000,stdout,_________________________________________________________________
+"2019-04-27 09:31:13.256000,stdout,""max_pooling2d_2 (MaxPooling2 (None, 36, 36, 32)        0         """
+2019-04-27 09:31:13.292000,stdout,_________________________________________________________________
+"2019-04-27 09:31:13.329000,stdout,""conv2d_3 (Conv2D)            (None, 34, 34, 64)        18496     """
+2019-04-27 09:31:13.364000,stdout,_________________________________________________________________
+"2019-04-27 09:31:13.401000,stdout,""max_pooling2d_3 (MaxPooling2 (None, 17, 17, 64)        0         """
+2019-04-27 09:31:13.446000,stdout,_________________________________________________________________
+"2019-04-27 09:31:13.483000,stdout,""flatten_1 (Flatten)          (None, 18496)             0         """
+2019-04-27 09:31:13.519000,stdout,_________________________________________________________________
+"2019-04-27 09:31:13.556000,stdout,""dense_1 (Dense)              (None, 64)                1183808   """
+2019-04-27 09:31:13.593000,stdout,_________________________________________________________________
+"2019-04-27 09:31:13.631000,stdout,""dropout_1 (Dropout)          (None, 64)                0         """
+2019-04-27 09:31:13.669000,stdout,_________________________________________________________________
+"2019-04-27 09:31:13.707000,stdout,""dense_2 (Dense)              (None, 1)                 65        """
+2019-04-27 09:31:13.743000,stdout,=================================================================
+"2019-04-27 09:31:13.885000,stdout,""Total params: 1,212,513"""
+"2019-04-27 09:31:13.920000,stdout,""Trainable params: 1,212,513"""
+2019-04-27 09:31:13.956000,stdout,Non-trainable params: 0
+2019-04-27 09:31:13.992000,stdout,_________________________________________________________________
+2019-04-27 09:31:14.028000,stdout,None
+"2019-04-27 09:31:14.064000,stdout,""Training for 20 epochs with 4 workers, use_multiprocessing is False"""
+"2019-04-27 09:31:14.100000,stderr,""2019-04-27 09:31:13.350838: I tensorflow/core/common_runtime/gpu/gpu_device.cc:1120] Creating TensorFlow device (/device:GPU:0) -> (device: 0, name: Tesla P100-PCIE-16GB, pci bus id: 0000:00:05.0, compute capability: 6.0)"""
+2019-04-27 09:31:14.680000,stdout,Epoch 1/20
+2019-04-27 09:31:26.104000,stdout, - 11s - loss: 0.6998 - acc: 0.5425 - val_loss: 0.6684 - val_acc: 0.6050
+2019-04-27 09:31:26.142000,stdout,Epoch 2/20
+2019-04-27 09:31:31.602000,stdout, - 6s - loss: 0.6638 - acc: 0.6150 - val_loss: 0.6295 - val_acc: 0.6230
+2019-04-27 09:31:31.640000,stdout,Epoch 3/20
+2019-04-27 09:31:36.909000,stdout, - 5s - loss: 0.6403 - acc: 0.6450 - val_loss: 0.6080 - val_acc: 0.7130
+2019-04-27 09:31:36.945000,stdout,Epoch 4/20
+2019-04-27 09:31:42.490000,stdout, - 6s - loss: 0.6154 - acc: 0.6550 - val_loss: 0.5569 - val_acc: 0.7160
+2019-04-27 09:31:42.526000,stdout,Epoch 5/20
+2019-04-27 09:31:48.024000,stdout, - 6s - loss: 0.6124 - acc: 0.6630 - val_loss: 0.5763 - val_acc: 0.6990
+2019-04-27 09:31:48.060000,stdout,Epoch 6/20
+2019-04-27 09:31:53.280000,stdout, - 5s - loss: 0.6062 - acc: 0.6685 - val_loss: 0.5596 - val_acc: 0.7080
+2019-04-27 09:31:53.317000,stdout,Epoch 7/20
+2019-04-27 09:31:58.592000,stdout, - 5s - loss: 0.5690 - acc: 0.7095 - val_loss: 0.5875 - val_acc: 0.6660
+2019-04-27 09:31:58.628000,stdout,Epoch 8/20
+2019-04-27 09:32:04.118000,stdout, - 6s - loss: 0.5816 - acc: 0.7115 - val_loss: 0.5156 - val_acc: 0.7580
+2019-04-27 09:32:04.155000,stdout,Epoch 9/20
+2019-04-27 09:32:09.422000,stdout, - 5s - loss: 0.5549 - acc: 0.7250 - val_loss: 0.5735 - val_acc: 0.7060
+2019-04-27 09:32:09.457000,stdout,Epoch 10/20
+2019-04-27 09:32:14.859000,stdout, - 5s - loss: 0.5395 - acc: 0.7355 - val_loss: 0.5065 - val_acc: 0.7530
+2019-04-27 09:32:14.896000,stdout,Epoch 11/20
+2019-04-27 09:32:20.356000,stdout, - 5s - loss: 0.5461 - acc: 0.7350 - val_loss: 0.4970 - val_acc: 0.7740
+2019-04-27 09:32:20.392000,stdout,Epoch 12/20
+2019-04-27 09:32:25.603000,stdout, - 5s - loss: 0.5517 - acc: 0.7275 - val_loss: 0.5384 - val_acc: 0.7480
+2019-04-27 09:32:25.640000,stdout,Epoch 13/20
+2019-04-27 09:32:31.032000,stdout, - 5s - loss: 0.5518 - acc: 0.7175 - val_loss: 0.4807 - val_acc: 0.7680
+2019-04-27 09:32:31.069000,stdout,Epoch 14/20
+2019-04-27 09:32:36.599000,stdout, - 6s - loss: 0.5339 - acc: 0.7500 - val_loss: 0.4821 - val_acc: 0.7660
+2019-04-27 09:32:36.635000,stdout,Epoch 15/20
+2019-04-27 09:32:41.829000,stdout, - 5s - loss: 0.5204 - acc: 0.7535 - val_loss: 0.5221 - val_acc: 0.7490
+2019-04-27 09:32:41.865000,stdout,Epoch 16/20
+2019-04-27 09:32:47.323000,stdout, - 5s - loss: 0.5314 - acc: 0.7335 - val_loss: 0.4692 - val_acc: 0.7810
+2019-04-27 09:32:47.360000,stdout,Epoch 17/20
+2019-04-27 09:32:52.479000,stdout, - 5s - loss: 0.5129 - acc: 0.7460 - val_loss: 0.4688 - val_acc: 0.7880
+2019-04-27 09:32:52.516000,stdout,Epoch 18/20
+2019-04-27 09:32:57.972000,stdout, - 5s - loss: 0.5170 - acc: 0.7565 - val_loss: 0.4887 - val_acc: 0.7630
+2019-04-27 09:32:58.008000,stdout,Epoch 19/20
+2019-04-27 09:33:03.391000,stdout, - 5s - loss: 0.4991 - acc: 0.7745 - val_loss: 0.4936 - val_acc: 0.7610
+2019-04-27 09:33:03.427000,stdout,Epoch 20/20
+2019-04-27 09:33:08.525000,stdout, - 5s - loss: 0.5045 - acc: 0.7600 - val_loss: 0.4568 - val_acc: 0.8000
+2019-04-27 09:33:08.667000,stdout,Saving model to dvc-small-cnn.h5
+"2019-04-27 09:33:10.256000,status,""container finished with return code 0, duration 129.160227"""
+2019-04-27 09:33:10.365000,status,completed in 131.56 seconds
